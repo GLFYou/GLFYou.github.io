@@ -65,25 +65,24 @@
 	
 <meta name="generator" content="Hexo 6.2.0"></head>
     
-		<body class="is-loading">
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
     <!-- Wrapper 外包 s-->
-    <div id="wrapper" class="fade-in overlay">
+    <div id="wrapper" class="fade-in">
         <!-- Intro 头部显示 s -->
-                <div id="intro">
-            <h1>This is<br />
-                        L-L-K </h1>
-            <p> Whatever is worth doing is worth doing well <br/> I'll think of you every step of the way
-            </p>
-            <ul class="actions">
-                <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-            </ul>
-        </div>
         <!-- Intro 头部显示 e -->
         <!-- Header 头部logo start -->
         <header id="header">
     <a href="/" class="logo">李 林 康</a>
 </header>
-        <!-- Header 头部logo end -->
         <!-- Nav 导航条 start -->
         <nav id="nav" class="special" >
             <ul class="menu links" >
@@ -152,83 +151,43 @@
                     
 			</ul>
 </nav>
-        <!-- Nav 导航条 end -->
-        <!-- Main 主要部分 start -->
-        
-        <!-- 文章列表   s -->
-        <div id="main" style="background-color: transparent; padding:0;">
-        <section class="link_container" style="margin-top: 0; background-color: transparent; ">
-            <div class="link_row">
-                <!-- 文章sample  s-->
 
-                
-                <div class="6u 12u(narrower)">
-                    <section class="link_box special">
-                       <a href="/2022/10/04/art2/">
-                        <div class="page_title" style="background-image: url(/img/bg1.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
-                            <!--标题-->
-                            <h2 class="page_title_text"> 2022年诺贝尔物理学奖 </h2>
-                            <!--段落-->
-                        </div>
-                        </a>
-                        <div class="home-post-info">
-                            <!-- Author Avatar -->
-                            <div class="home-post-info-author-avatar">
-                                <h6><span class="home-post-info-data">2022-10-04</span></h6>
-                                <div class="home-post-info-Category">
-                                    <!-- Category -->
-                                    <span>
-                            <h6>
-                            <a class="post_category-link" target="_blank" rel="noopener" href="http://localhost:4000/categories/Algorithm/">
-                                </a>
-                            </h6>
-                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- 文章sample  e-->
-            
-                <div class="6u 12u(narrower)">
-                    <section class="link_box special">
-                       <a href="/2022/10/04/HEXO%E5%BB%BA%E7%AB%99%E8%A6%81%E7%82%B9/">
-                        <div class="page_title" style="background-image: url(/img/bg4.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;">
-                            <!--标题-->
-                            <h2 class="page_title_text"> HEXO建站要点 </h2>
-                            <!--段落-->
-                        </div>
-                        </a>
-                        <div class="home-post-info">
-                            <!-- Author Avatar -->
-                            <div class="home-post-info-author-avatar">
-                                <h6><span class="home-post-info-data">2022-10-04</span></h6>
-                                <div class="home-post-info-Category">
-                                    <!-- Category -->
-                                    <span>
-                            <h6>
-                            <a class="post_category-link" target="_blank" rel="noopener" href="http://localhost:4000/categories/Algorithm/">
-                                <a class="post_category-link" href="/categories/HEXO/">HEXO</a></a>
-                            </h6>
-                        </span>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <!-- 文章sample  e-->
-            
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/img/bg4.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >HEXO建站要点</h2></a>
             </div>
-        </section>
-        </div>
-        <!-- 文章列表   end -->
-        <!-- Main 主要部分 end -->
-        <!-- footer  页码 start-->
-        <footer style="text-align: center; padding-top: 2em;">
-  
-</footer>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="切换主题"><a href="#切换主题" class="headerlink" title="切换主题"></a>切换主题</h2><p>比如要切换minos主题</p>
+<p>打开主题的仓库,复制仓库地址<code>git@github.com:ppoffice/hexo-theme-minos.git</code></p>
+<p>在文件根目录打开终端,输入<code>git clone git@github.com:ppoffice/hexo-theme-minos.git themes/minos</code>克隆仓库内容</p>
+<p>在_config.yml文件夹中找到theme,更换成theme: minos</p>
+<p>然后<code>hexo clean</code>清除上一次缓存,这时可能会报错,提示你有些依赖没有安装</p>
+<p>如<code>ERROR Package lodash is not installed.</code></p>
+<p>这时候需要<code>npm i lodash</code>将依赖包安装完毕,以此类推</p>
+<p>安装完依赖后<code>hexo clean</code></p>
+<p><code>hexo g</code>生成部署内容</p>
+<p><code>hexo s</code>在本地预览</p>
+<p><code>hexo d</code>部署</p>
+<h2 id="安装hexo-renderer-sass时报错"><a href="#安装hexo-renderer-sass时报错" class="headerlink" title="安装hexo-renderer-sass时报错"></a>安装hexo-renderer-sass时报错</h2><p>需要切换镜像</p>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+<p><code>npm config set registry https://registry.npm.taobao.org</code></p>
+<p><code>cnpm install hexo-renderer-sass --save</code></p>
+<h2 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h2><p>终端输入<code>hexo new page &quot;home&quot;</code>,随后在source目录下会新创建一个home文件夹,home是页面的名称</p>
+<p>在source&gt;home&gt;index.md中可以设置其类型为home:</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: home</span><br><span class="line">date: 2022-10-04 01:37:34</span><br><span class="line">type : &quot;home&quot;</span><br></pre></td></tr></table></figure>
 
-        <!-- footer  页码 end-->
+<p>假如主题名字为minos,在themes&gt;minos目录下新建文件夹<code>_config.yml</code>,内容:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu</span>:</span><br><span class="line">  首页: <span class="regexp">/home/</span></span><br></pre></td></tr></table></figure>
+<p>这样就可以新建一个导航链接,点击后跳转到home页面</p>
+<p>还可以将这个页面设置为默认页面,在项目根目录的<code>_config.yml</code>中找到<code>default_layout</code>这一项,改成<code>default_layout: home</code></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+
+        </div>
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -239,11 +198,10 @@
                 <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 			
         </div>
-        <!-- Copyright 版权 end -->
     </div>
-    <!-- Wrapper 外包 e-->
-    <!-- Scripts -->
 </body>
+
+
 
  	
 </html>
